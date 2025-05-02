@@ -1,0 +1,25 @@
+.container-nav{
+    display: flex;
+    background-color: #74ACDF;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.nav-img{
+    border-radius: 50% ;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #1565C0;
+    font-size: 1.3rem;
+}
+.nav-a{
+    display: flex;
+    gap: 2rem;
+}
+/*#74ACDF #FFFFFF #FBC02D #A67B5B #D8C3A5 #1565C0*/
