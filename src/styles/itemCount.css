@@ -1,0 +1,11 @@
+.itemCount{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.number{
+    padding: 0.5rem 0.75rem;
+    border-radius: 15px;
+    font-size: 1rem;
+}

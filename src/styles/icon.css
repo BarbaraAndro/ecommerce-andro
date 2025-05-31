@@ -1,0 +1,19 @@
+
+
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .icon {
+    /* style={{ position:'fixed', top:'50%' ,fontSize:'1.5rem', fontWeight:"400"}} */
+    position: fixed;
+    top: 50%;
+    font-size: 2rem;
+    font-weight: 400;
+    animation: girar 2s linear;
+  }

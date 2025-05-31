@@ -1,0 +1,17 @@
+.cardDetail{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100px;
+    gap: 10px;
+    background-color: #74ACDF;
+    padding: 1rem;
+    margin: 15px auto;
+}
+
+.cardDetail img{
+    width: 30%;
+}
+
+/*#74ACDF #FFFFFF #FBC02D #A67B5B #D8C3A5 #1565C0*/
