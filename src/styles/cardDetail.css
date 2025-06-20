@@ -1,16 +1,34 @@
-.cardDetail{
-    width: 60vw;
+.cardContainer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.cardDetailContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 2rem;
+    max-height: 10rem;
+}
+
+.cardDetail {
+    width: 80vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border-radius: 100px;
     gap: 10px;
     background-color: #74ACDF;
     padding: 1rem;
-    margin: 15px auto;
 }
 
-.cardDetail img{
+.cardDetail img {
     width: 30%;
 }
 

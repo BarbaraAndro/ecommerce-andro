@@ -1,30 +1,44 @@
 import React, { useEffect, useState } from 'react'
-import { getProducts } from '../mock/AsyncService'
 import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
-import { SlRefresh } from "react-icons/sl";
-import '../styles/icon.css'
-
+import Loading from './Loading'
+import { doc, getDoc, collection } from 'firebase/firestore'
+import { db } from '../service/firebase'
+import Error from './Error'
+import '../styles/cardDetail.css'
 
 const ItemDetailContainer = () => {
     const [detalle, setDetalle] = useState({})
     const { itemId } = useParams()
+    const [loading, setLoading] = useState(false)
+    const [invalid, setInvalid] = useState(false)
 
     useEffect(() => {
-        getProducts(itemId)
-            .then((response) => setDetalle(response.find((item)=> item.id === itemId)))
-            .catch((error) => console.log(error))
+        setLoading(true)
+        const productCollection = collection(db, "products")
+        const docRef = doc(productCollection, itemId)
+        getDoc(docRef)
+            .then((res) => {
+                if (res.data()) {
+                    setDetalle({ ...res.data(), id: res.id })
+                } else {
+                    setInvalid(true)
+                }
+            })
+            .catch((err) => console.log(err))
+            .finally(() => setLoading(false))
     }, [])
 
+    if (invalid) {
+        return (
+            <Error />
+        )
+    }
+
     return (
-        // <div style={{ display: 'flex', justifyContent: 'center' }}><ItemDetail detalle={detalle} /></div>
-        // <div style={{ display: 'flex', justifyContent: 'center' }}>{detalle.id && <ItemDetail detalle={detalle} />}</div>
-        // <div style={{ display: 'flex', justifyContent: 'center' }}>{detalle.id ? <ItemDetail detalle={detalle}/> : <h2>Cargando producto</h2>}</div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>{detalle.id ? <ItemDetail detalle={detalle}/> : <SlRefresh className='icon'/>}</div>
-
-        
-
-
+        <div>
+            {loading ? <Loading /> : <div className='cardContainer'> <ItemDetail detalle={detalle} /></div>}
+        </div>
     )
 }
 

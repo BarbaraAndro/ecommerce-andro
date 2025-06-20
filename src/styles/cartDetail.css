@@ -1,0 +1,38 @@
+.CartContainer {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #74ACDF;
+    margin: 5rem auto;
+    padding: 3rem 0rem 1rem 0;
+    gap: 2rem;
+}
+
+.itemCartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    gap: 1rem;
+}
+
+.itemCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 4rem;
+    height: 200px;
+    border-radius: 50px;
+    background-color: #D8C3A5;
+}
+
+.itemCart-img {
+    width: 150px;
+}
+
+/*#74ACDF celeste #FFFFFF #FBC02D= amarillo #A67B5B marron osc #D8C3A5 marron claro #1565C0 azul*/

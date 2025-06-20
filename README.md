@@ -1,12 +1,25 @@
-# React + Vite
+# Siempre Argenta 🛒
+Siempre Argenta es una aplicación web creada como proyecto final del curso de React de Coderhouse. Esta aplicación es un ecommerce de productos de Argentina en donde podes filtrar por categorías, agregar productos al carrito y finalizar la compra completando un formulario.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Inicio](/public/vista-home.png)
 
-Currently, two official plugins are available:
+## Librerias 📖
+- [React icons](https://react-icons.github.io/react-icons/): Librería utilizada para colocar íconos.
+- [React hook form](https://react-hook-form.com/get-started): Librería utilizada para la validación de formularios.
+- [React router dom](https://reactrouter.com/home): Librería utilizada para la navegación de la aplicación.
+- [Firerbase](https://firebase.google.com): Librería utilizada como base de datos.
+- [SweetAlert2](https://sweetalert2.github.io): Librería utilizada para crear alerts mas estéticos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación ⚙️
+```bash
+ git clone https://github.com/BarbaraAndro/ecommerce-andro
+ cd ecommerce-andro
+ npm install
+ npm run dev
+```
 
-## Expanding the ESLint configuration
+## Versión Host 💻
+Para visualizar la aplicación web en un navegador ingresar en el siguiente link:
+[Siempre Argenta]()
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Proyecto creado por Barbara Andro 

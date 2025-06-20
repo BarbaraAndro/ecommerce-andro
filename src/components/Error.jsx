@@ -1,14 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../styles/error.css'
+import { MdErrorOutline } from 'react-icons/md'
 
 const Error = () => {
   return (
     <div className='error'>
-        <h2>Error de navegación</h2>
-        <NavLink to='/'>
-            <button className='btn btn-sumar'>Volver al inicio</button>
-        </NavLink>
+      <h2>Error de navegación</h2>
+      <div className='error-icon'><MdErrorOutline /></div>
+      <NavLink to='/'>
+        <button className='btn btn-sumar'>Volver al inicio</button>
+      </NavLink>
     </div>
   )
 }
