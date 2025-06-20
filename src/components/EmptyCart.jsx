@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdErrorOutline } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-import '../styles/EmptyCart.css'
+import '../styles/emptyCart.css'
 
 const EmptyCart = () => {
     return (
