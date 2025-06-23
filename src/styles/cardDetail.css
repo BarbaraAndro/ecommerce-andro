@@ -32,4 +32,8 @@
     width: 30%;
 }
 
-/*#74ACDF #FFFFFF #FBC02D #A67B5B #D8C3A5 #1565C0*/
+.botones {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}

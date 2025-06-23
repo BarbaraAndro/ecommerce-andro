@@ -66,16 +66,3 @@ export const products =[
         img:'https://picsum.photos/201'
     } */
 ]
-
-let error = false
-export const getProducts = () => {
-    return new Promise((resolve,reject) =>{
-        setTimeout(()=>{
-            if (!error){
-                resolve(products)
-            }else{
-                reject('Hubo un error. Intentelo nuevamente')
-            }
-        },2000)
-    })
-}

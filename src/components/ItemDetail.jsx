@@ -16,9 +16,10 @@ const ItemDetail = ({ detalle }) => {
             toast: true,
             icon: 'success',
             iconColor: '#74ACDF',
+            showConfirmButton: false,
             title: 'Has agregado un producto al carrito!!',
             position: "top-end",
-            timer: 3000,
+            timer: 2000,
         })
 
     }
@@ -31,8 +32,8 @@ const ItemDetail = ({ detalle }) => {
             <h3>€{detalle.price}</h3>
             <p>Stock: {stockActualizado}</p>
             {compra ?
-                <div>
-                    <Link to={'/'} className='btn btn-sumar'>Ver mas productos</Link>
+                <div className='botones'>
+                    <Link to={'/'} className='btn btn-sumar'>Mas productos</Link>
                     <Link to={'/cart'} className='btn btn-sumar'> Ir al carrito</Link>
                 </div> :
                 <ItemCount stock={stockActualizado} onAdd={onAdd} />}

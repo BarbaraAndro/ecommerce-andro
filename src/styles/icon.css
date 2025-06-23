@@ -11,7 +11,7 @@
 .icon {
   position: fixed;
   top: 50%;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
   animation: girar 1.5s linear infinite;
 }

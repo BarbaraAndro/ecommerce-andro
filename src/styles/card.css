@@ -1,7 +1,7 @@
-.contenedor{
-    display:flex;
-    justify-content:space-evenly;
-    flex-wrap:wrap;
+.contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -19,25 +19,22 @@
     border-radius: 20px;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 10px 10px 10px #74ACDF;
     scale: 1.03;
     transition-duration: 0.5s;
 }
 
-.card-body{
+.card-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
 
-.card-img{
+.card-img {
     width: 80%;
     display: flex;
     justify-content: center;
     margin: auto 0;
 }
-
-
-/*#74ACDF celeste #FFFFFF #FBC02D= amarillo #A67B5B marron osc #D8C3A5 marron claro #1565C0 azul*/

@@ -1,22 +1,21 @@
-.btn{
+.btn {
     padding: 0.5rem 0.75rem;
     border-radius: 15px;
     font-size: 1rem;
     border: none;
 }
 
-.btn:hover{
+.btn:hover {
     scale: 1.05;
     box-shadow: 2px 2px 3px #D8C3A5;
 }
 
-.btn-restar{
+.btn-restar {
     color: #b08953;
     background-color: #D8C3A5;
 }
 
-.btn-sumar{
+.btn-sumar {
     color: #D8C3A5;
-    background-color:#b08953;
+    background-color: #b08953;
 }
-/*#74ACDF #FFFFFF #FBC02D #A67B5B #D8C3A5 #1565C0*/

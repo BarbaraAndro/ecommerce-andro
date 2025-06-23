@@ -32,9 +32,11 @@ const CartDetail = () => {
         <div className='itemCartContainer' key={prod.id}>
           <div className='itemCart'>
             <img className='itemCart-img' src={prod.img} alt={prod.name} />
+            <div className="itemCart-text">
             <h2>{prod.name}</h2>
             <h3>€{prod.price}</h3>
             <h3>Cantidad: {prod.quantity}</h3>
+            </div>
             <h3>Subtotal: €{(prod.price * prod.quantity).toFixed(1)}</h3>
             <button className='btn btn-sumar' onClick={() => removeItem(prod.id)}><ImCross /></button>
           </div>
@@ -42,7 +44,7 @@ const CartDetail = () => {
       )
       )}
       <h2>Total a pagar: €{cartTotal().toFixed(1)}</h2>
-      <div>
+      <div className='botones'>
         <button className='btn btn-restar' onClick={() => preClear()}>Vaciar carrito</button>
         <Link to='/checkout' className='btn btn-sumar'>Finalizar compra</Link>
       </div>
